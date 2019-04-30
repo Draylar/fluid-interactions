@@ -1,26 +1,26 @@
 
 {
   "schemaVersion": 1,
-  "id": "leaf-decay",
-  "version": "1.0.0",
+  "id": "modid",
+  "version": "${version}",
 
-  "name": "Leaf Decay",
-  "description": "1.14 mod that adds quick leaf decay.",
+  "name": "Example Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Draylar"
+    "Me!"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "GPLv3",
-  "icon": "assets/leaf-decay/icon.png",
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.draylar.leafDecay.LeafDecay"
+      "net.fabricmc.example.ExampleMod"
     ]
   },
   "mixins": [
@@ -30,5 +30,8 @@
   "requires": {
     "fabricloader": ">=0.4.0",
     "fabric": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
   }
 }
