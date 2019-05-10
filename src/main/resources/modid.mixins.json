@@ -1,9 +1,10 @@
 {
   "required": true,
-  "package": "com.github.draylar.modid.mixin",
+  "package": "com.github.draylar.fi.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-
+    "FluidBlockMixin",
+    "LavaFluidMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,26 +1,26 @@
 
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "fluid-interactions",
+  "version": "1.0.0",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Fluid Interactions",
+  "description": "Fluid Interactions allows you to customize the result of water and lava colliding.",
   "authors": [
-    "Me!"
+    "Draylar"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "GPLv3",
+  "icon": "assets/fluid-interactions/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.github.draylar.fi.FluidInteractions"
     ]
   },
   "mixins": [
