@@ -10,8 +10,8 @@
     "Draylar"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://minecraft.curseforge.com/projects/fluid-interactions?gameCategorySlug=mc-mods&projectID=320668#c9",
+    "sources": "https://github.com/Draylar/fluid-interactions"
   },
 
   "license": "GPLv3",
