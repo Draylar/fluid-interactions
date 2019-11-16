@@ -1,6 +1,6 @@
 package com.github.draylar.fi.mixin;
 
-import com.github.draylar.fi.FluidInteractionMaps;
+import com.github.draylar.fi.InteractionPools;
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.LavaFluid;
@@ -13,11 +13,11 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LavaFluid.class)
-public class LavaFluidMixin
-{
+public class LavaFluidMixin {
+
     @Inject(at = @At(value = "INVOKE_ASSIGN", target = "Lnet/minecraft/world/IWorld;setBlockState(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;I)Z"), method = "flow")
-    private void injectStone(IWorld iWorld_1, BlockPos blockPos_1, BlockState blockState_1, Direction direction_1, FluidState fluidState_1, CallbackInfo ci) {
+    private void injectStone(IWorld world, BlockPos pos, BlockState state, Direction direction, FluidState fluidState, CallbackInfo ci) {
         // lava falls on water -- normally stone
-        iWorld_1.setBlockState(blockPos_1, FluidInteractionMaps.getRandomStone(), 3);
+        world.setBlockState(pos, InteractionPools.getRandomStone(), 3);
     }
 }
